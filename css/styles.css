@@ -1,0 +1,350 @@
+  /************font**********/
+  body {
+    background: url(https://www.bbva.com/wp-content/uploads/2020/04/construccion-recurso-bbva-1920x1180.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+  }
+
+  p {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .capa {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  /*****Login-form***************/
+  .container-form {
+    width: 26%;
+    display: flex;
+    margin: 3% auto;
+    border-radius: 40px;
+    background-color: #00000075;
+
+  }
+
+  .container-form section.login-fm {
+    height: 366px;
+    width: 56%;
+    margin: 0% auto;
+  }
+
+  @media (max-width: 1025px) {
+    .container-form {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 1025px) {
+    .container-form section.login-fm {
+      width: 80%;
+      margin: 0%;
+
+    }
+  }
+
+  /************nav-bar***************/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  /************Table Archives***************/
+  .containerOne{
+    margin-top: 20%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .container-files {
+    margin-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .form-label{
+    color: #ffffff;
+  }
+
+  .tableDataInt {
+    background-color: #04aa0a36;
+    color: white;
+    width: auto;
+    height: auto;
+    border-collapse: separate;
+    position: fixed;
+    right: 36%;
+  }
+
+  .tableDataInt th,
+  td {
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+    text-align: left;
+  }
+
+  .tableDataInt .btn_file {
+    margin: 0px;
+    position: sticky;
+    left: 5%;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .tableDataInt .btn_file_sent {
+    margin: 0px;
+    margin: 1% auto;
+    position: sticky;
+    left: 60%;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  td {
+    font-family: monospace;
+  }
+
+
+
+  /************Table User Data***************/
+  section.permis-admi {
+    margin-top: 10%;
+  }
+  .tableUserData {
+    color: #ffffff;
+    display:grid;
+    justify-content: center;
+  }
+
+  .tableUserData tr th,
+  tr td {
+    border: 1px solid rgba(101, 104, 101, 0.689);
+    padding: 8px;
+    text-align: left;
+    border-width: 2pt;
+  }
+
+  .dataUser {
+    text-transform:uppercase ;
+    color: #ffffff;
+  }
+  /*******Estilos para el encabezado***********/
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .container .btn-menu,
+  .logo {
+    float: left;
+    line-height: 100px;
+  }
+
+  .container .btn-menu label {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .logo h1 {
+    margin-top: 17%;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    margin-left: 1px;
+    text-transform: uppercase;
+  }
+
+  .container .menu {
+    float: right;
+    line-height: 100px;
+  }
+
+  .container .menu a {
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+  }
+
+  .container .menu a:hover {
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+  }
+
+  /****************Menù lateral*****************/
+  #btn-menu {
+    display: none;
+  }
+
+  .container-menu {
+    position: fixed;
+    background: rgba(29, 112, 54, 0.301);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #btn-menu:checked~.container-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1f201f;
+    height: 100%;
+    position: fixed;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+  }
+
+  #btn-menu:checked~.container-menu .cont-menu {
+    transform: translateX(0%);
+  }
+
+  .cont-menu nav {
+    transform: translateY(15%);
+  }
+
+  .cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+  }
+
+  .cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+  }
+
+  .cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  /********************PLANOS STYLES**********************/
+.novedades{
+	text-align:center;
+	line-height:500px;
+	vertical-align:middle;
+	color: rgb(31, 167, 31);
+}
+#text h5{
+	text-align: center;
+	color:rgb(255, 255, 255);
+	font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;  
+}
+#text a{
+	text-align: center;
+	color:rgb(20, 139, 20);
+	font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px; 
+}
+
+/********************PLANOS STYLES**********************/
+.galeria{
+  column-count: 2;
+	grid-template-columns: repeat(auto-fit), minmax(350px, 1fr);
+	width: 50%;
+	margin: auto;
+	grid-gap: 10px;
+	padding: 100px 0;
+	overflow: hidden;
+}	 
+.galeria img{
+	width: 100%;
+	height: 200px ;
+	object-fit:cover;
+}
+
+.galeria img:hover{
+  cursor: crosshair;
+  opacity: 5;
+  filter: contrast(120%);
+}
+
+/*********forum*********/
+.forum-form{
+  margin-top:10%;
+  color: #ffffff;
+  width: 94%;
+  padding-left: 10%;
+  display: grid;
+}
+.table-forum tr,th {
+  background-color: white;
+  color: black;
+  border-radius: 6Px;
+}.table-forum,td{
+  background-color: #d4cece;
+
+}
+.tableUserDataComents
+td {
+  display:block;
+}
+button#miBoton1 {
+  width: 141px;
+}
+.tableUserDataComents {
+  margin-left: 10%;
+  margin-right: 10%;
+}
